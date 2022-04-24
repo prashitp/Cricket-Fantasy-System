@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mydatabaseModelStoreContainer" CdmEntityContainer="mydatabaseEntities">
+    <EntitySetMapping Name="event_db">
+      <EntityTypeMapping TypeName="mydatabaseModel.event_db">
+        <MappingFragment StoreEntitySet="event_db">
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="event_team_1" ColumnName="event_team_1" />
+          <ScalarProperty Name="event_team_2" ColumnName="event_team_2" />
+          <ScalarProperty Name="event_date" ColumnName="event_date" />
+          <ScalarProperty Name="event_start" ColumnName="event_start" />
+          <ScalarProperty Name="event_lock" ColumnName="event_lock" />
+          <ScalarProperty Name="event_count" ColumnName="event_count" />
+          <ScalarProperty Name="event_status" ColumnName="event_status" />
+          <ScalarProperty Name="event_mom" ColumnName="event_mom" />
+          <ScalarProperty Name="event_label" ColumnName="event_label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="event_player">
+      <EntityTypeMapping TypeName="mydatabaseModel.event_player">
+        <MappingFragment StoreEntitySet="event_player">
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="player_name" ColumnName="player_name" />
+          <ScalarProperty Name="player_points" ColumnName="player_points" />
+          <ScalarProperty Name="player_value" ColumnName="player_value" />
+          <ScalarProperty Name="player_image" ColumnName="player_image" />
+          <ScalarProperty Name="player_type" ColumnName="player_type" />
+          <ScalarProperty Name="player_team" ColumnName="player_team" />
+          <ScalarProperty Name="table_id" ColumnName="table_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="player_db">
+      <EntityTypeMapping TypeName="mydatabaseModel.player_db">
+        <MappingFragment StoreEntitySet="player_db">
+          <ScalarProperty Name="team_id" ColumnName="team_id" />
+          <ScalarProperty Name="player_name" ColumnName="player_name" />
+          <ScalarProperty Name="player_type" ColumnName="player_type" />
+          <ScalarProperty Name="player_value" ColumnName="player_value" />
+          <ScalarProperty Name="player_status" ColumnName="player_status" />
+          <ScalarProperty Name="player_image" ColumnName="player_image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="result_db">
+      <EntityTypeMapping TypeName="mydatabaseModel.result_db">
+        <MappingFragment StoreEntitySet="result_db">
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_team_name" ColumnName="user_team_name" />
+          <ScalarProperty Name="user_pts" ColumnName="user_pts" />
+          <ScalarProperty Name="user_rank" ColumnName="user_rank" />
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="team_db">
+      <EntityTypeMapping TypeName="mydatabaseModel.team_db">
+        <MappingFragment StoreEntitySet="team_db">
+          <ScalarProperty Name="team_id" ColumnName="team_id" />
+          <ScalarProperty Name="team_name" ColumnName="team_name" />
+          <ScalarProperty Name="team_ranking" ColumnName="team_ranking" />
+          <ScalarProperty Name="team_image" ColumnName="team_image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_db">
+      <EntityTypeMapping TypeName="mydatabaseModel.user_db">
+        <MappingFragment StoreEntitySet="user_db">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_pwd" ColumnName="user_pwd" />
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="user_bday" ColumnName="user_bday" />
+          <ScalarProperty Name="user_country" ColumnName="user_country" />
+          <ScalarProperty Name="user_fav_team" ColumnName="user_fav_team" />
+          <ScalarProperty Name="user_per_factor" ColumnName="user_per_factor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_player_db">
+      <EntityTypeMapping TypeName="mydatabaseModel.user_player_db">
+        <MappingFragment StoreEntitySet="user_player_db">
+          <ScalarProperty Name="user_team_id" ColumnName="user_team_id" />
+          <ScalarProperty Name="player_team" ColumnName="player_team" />
+          <ScalarProperty Name="player_type" ColumnName="player_type" />
+          <ScalarProperty Name="player_name" ColumnName="player_name" />
+          <ScalarProperty Name="player_image" ColumnName="player_image" />
+          <ScalarProperty Name="player_value" ColumnName="player_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_team_db">
+      <EntityTypeMapping TypeName="mydatabaseModel.user_team_db">
+        <MappingFragment StoreEntitySet="user_team_db">
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_team_name" ColumnName="user_team_name" />
+          <ScalarProperty Name="user_team_id" ColumnName="user_team_id" />
+          <ScalarProperty Name="star_bats" ColumnName="star_bats" />
+          <ScalarProperty Name="star_bowl" ColumnName="star_bowl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
